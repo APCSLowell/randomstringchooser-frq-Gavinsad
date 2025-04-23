@@ -11,7 +11,7 @@ list.add(str[i]);
   }
   public String getNext(){
 if(list.size()<1){return("NONE");}
-return list.remove(list.get((int)(Math.random()*list.size())));
+return list.remove((int)(Math.random()*list.size()));
 
   }
 }
