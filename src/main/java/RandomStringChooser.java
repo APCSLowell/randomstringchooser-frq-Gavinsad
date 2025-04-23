@@ -6,12 +6,12 @@ private ArrayList<String> list;
   public RandomStringChooser(String[] str){
 list = new ArrayList<String>();
     for(int i=0;i<str.length;i++){
-list.add(String[i]);
+list.add(str[i]);
     }
   }
   public String getNext(){
-if(list.length()<1){return("NONE");}
-return list.remove(list.get((int)(math.Random()*list.length())));
+if(list.size()<1){return("NONE");}
+return list.remove(list.get((int)(Math.random()*list.size())));
 
   }
 }
